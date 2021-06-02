@@ -32,7 +32,7 @@ public class TodoController {
     }
 
     @DeleteMapping(value = "api/delete/{id}")
-    public void delete(@PathParam("id") Long id){
+    public void delete(@PathVariable Long id){
         service.delete(id);
     }
 
